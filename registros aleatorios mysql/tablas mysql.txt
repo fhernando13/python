@@ -1,0 +1,15 @@
+pip install pymysql
+
+
+drop table if exists factura_abrilmayo;
+create table if not exists factura_abrilmayo(
+    numFactura int primary key,
+    numCliente int, 
+    fecha Date, 
+    hora time, 
+    noVendedor int, 
+    monto int, 
+    iva decimal(10, 2), 
+    total decimal(10, 2), 
+    tipoPago varchar(100),
+);
