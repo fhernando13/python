@@ -1,0 +1,25 @@
+//Instalar Selenium en Windows o Linux
+pip innstall selenuim
+//Instalar psycopg2 en Windows
+pip install psycopg2
+//En Linux
+pip install psycopg2-binary
+
+
+--Query en PostgreSQL
+CREATE DATABASE ssd;
+USE ssd;
+
+drop table if exists ssd_table;
+CREATE TABLE IF NOT EXISTS ssd_table(
+	id serial not null,
+	description varchar(255),
+	vendedor varchar(100),
+	precio integer,
+      descuento varchar (50),
+	meses integer,
+	pagos integer,
+      envio varchar (30),
+	primary key(id)
+);
+
