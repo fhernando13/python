@@ -7,8 +7,8 @@ create table abril_mayo(
     fecha Date, 
     hora time, 
     noVendedor integer, 
-    monto inetger, 
+    monto integer, 
     iva numeric(10, 2), 
     total numeric(10, 2), 
-    tipoPago character varying(100),
+    tipoPago varchar(100)
 );
